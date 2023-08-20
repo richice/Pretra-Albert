@@ -19,17 +19,17 @@ Fine-tunes albert-based-chinese model using MLM (masked language modeling) on cu
 
 ## 2023-02-27
 
-- Added adapter layer to pretrained Albert model
-- Froze pretrained model weights 
-- Only update adapter parameters during training
-- Used separate optimizer and learning rate for adapter
-
-## 2023-03-05  
-
 - Switched to AdapterTrainer for training loop
 - Implemented gradient accumulation 
 - Added learning rate scheduler 
 - Updated to dynamic batch size
+
+## 2023-03-05  
+
+- Added adapter layer to pretrained Albert model
+- Froze pretrained model weights 
+- Only update adapter parameters during training
+- Used separate optimizer and learning rate for adapter
 
 ## 2023-03-12
 
