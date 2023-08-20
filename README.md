@@ -11,7 +11,7 @@ Fine-tunes albert-based-chinese model using MLM (masked language modeling) on cu
 
 ## Usage
 
-- Update `block_size`, `num_train_epochs`, `per_device_train_batch_size` etc
+- Update block_size, num_train_epochs, per_device_train_batch_size etc
 - Run training loop
 - Model saved to `aec_albert` directory
 
