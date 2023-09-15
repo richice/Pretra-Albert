@@ -1,20 +1,3 @@
-# 根据您的建议，以下是更新后的代码。已添加了dropout、weight_decay、gradient_accumulation_steps和learning_rate_scheduler参数，并相应地更新了optimizer和scheduler。此外，还调整了per_device_train_batch_size和learning_rate，以匹配新的gradient_accumulation_steps参数。
-    # dropout率：可以增加dropout率以减少过拟合的风险。建议尝试增加dropout率到0.3或更高。
-    # weight decay：可以通过对权重进行正则化来减少过拟合。建议使用weight decay参数，通常情况下设置在0.01左右。
-    # 梯度累积：可以使用梯度累积来增加batch_size的大小而不会导致显存不足。将累积步数设置在2-4之间。
-    # 学习率调度：您可以尝试不同的学习率调度策略，例如cosine退火学习率调度或学习率衰减。
-    # 以下是更新的建议参数：
-    # block_size = 128
-    # num_train_epochs = 8
-    # per_device_train_batch_size = 16
-    # learning_rate = 1e-5
-    # warmup_steps = 1000
-    # mlm_probability = 0.1
-    # dropout_rate = 0.3
-    # weight_decay = 0.01
-    # gradient_accumulation_steps = 2
-    # learning_rate_scheduler = 'cosine'
-
 from tqdm import tqdm
 import logging
 import torch
